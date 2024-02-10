@@ -21,7 +21,7 @@ export default function Home() {
 
             <section className="py-16">
                 <div className="container mx-auto px-4">
-                    <h2 className="text-3xl font-semibold text-orange-500 mb-8">What I Do?</h2>
+                    <h2 className="text-3xl text-center font-semibold text-orange-500 mb-8">What I Do?</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <div className="bg-black rounded-lg shadow-md flex flex-col items-center justify-center p-6 transform hover:-translate-y-1 transition-transform duration-300">
                             <FaCode size={48} color="#FFA500" className="mb-4" />

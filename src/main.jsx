@@ -1,30 +1,26 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './index.css'
-import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
-import Layout from './Layout.jsx'
-import Home from './components/Home/Home.jsx'
-import About from './components/About/About.jsx'
-import Contact from './components/Contact/Contact.jsx'
-import User from './components/User/User.jsx'
-import Github from './components/Github/Github.jsx'
-import Skill from './components/Skill/Skill.jsx'
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
+import Skill from './components/Skill/Skill';
 
-const router =createBrowserRouter(
-  createRoutesFromElements(
-    <Route path='/' element={<Layout/>}>
-      <Route path='' element={<Home/>} />
-      <Route path='about' element={<About/>} />
-      <Route path='skill' element={<Skill/>} />
-      <Route path='contact' element={<Contact/>} />
-      <Route path='github' element={<Github/>} />
-      <Route path='user/:userid' element={<User/>} />
-    </Route>
-  )
-)
+const rootElement = document.getElementById('root');
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(rootElement).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>,
-)
+    <Router>
+      <Routes>
+        <Route path="/" element={<App />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="skill" element={<Skill />} />
+          <Route path="contact" element={<Contact />} />
+        </Route>
+      </Routes>
+    </Router>
+  </React.StrictMode>
+);
