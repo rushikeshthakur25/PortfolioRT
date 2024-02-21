@@ -22,7 +22,7 @@ export default function About() {
                         <img src={man} alt="image" />
                     </div>
                     <div className="md:7/12 lg:w-6/12">
-                        <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">
+                        <h2 className="text-2xl text-orange-700 font-bold md:text-4xl">
                             Here's a snapshot of my career and education
                         </h2>
                         <p className="mt-6 text-gray-600">
@@ -41,8 +41,7 @@ export default function About() {
                             <div className="text-center">
                                 <h3 className="text-2xl font-bold text-gray-200">Work Experience</h3>
                                 <p className="mt-2 text-gray-400">
-                                    Inter at PorsperTech: Developed web projects and gained hands-on experience in web security, including participation in bug bounty programs on platforms like HackerOne and Bugcrowd.
-                                </p>
+                                Intern at ProsperTech: Engaged in developing web projects, acquiring hands-on development experience.                                </p>
                             </div>
                         </div>
                     </div>

@@ -20,30 +20,34 @@ export default function Header() {
                         )}
                     </svg>
                 </button>
-                <nav className={`lg:flex lg:space-x-8 flex items-stretch ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
-                    <NavLink to="/" className="nav-link">
+                <nav className={`lg:flex lg:space-x-8 ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
+                    {/* Home Link */}
+                    <NavLink to="/" className="nav-link flex items-center" title="Home">
                         <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V7l-8-4-8 4z" />
                         </svg>
-                       
+                        <span className="tooltip">Home</span>
                     </NavLink>
-                    <NavLink to="/about" className="nav-link">
+                    {/* About Link */}
+                    <NavLink to="/about" className="nav-link flex items-center" title="About">
                         <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14v3a2 2 0 01-2 2H7a2 2 0 01-2-2v-3m14-4v3m0 0V9a2 2 0 00-2-2H7a2 2 0 00-2 2v4a2 2 0 002 2h10a2 2 0 002-2z" />
                         </svg>
-                     
+                        <span className="tooltip">About</span>
                     </NavLink>
-                    <NavLink to="/skill" className="nav-link">
+                    {/* Skills Link */}
+                    <NavLink to="/skill" className="nav-link flex items-center" title="Skills">
                         <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 12H6M12 5l-7 7 7 7" />
                         </svg>
-                        
+                        <span className="tooltip">Skills</span>
                     </NavLink>
-                    <NavLink to="/contact" className="nav-link">
+                    {/* Contact Link */}
+                    <NavLink to="/contact" className="nav-link flex items-center" title="Contact">
                         <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
                         </svg>
-                        
+                        <span className="tooltip">Contact</span>
                     </NavLink>
                 </nav>
             </div>
