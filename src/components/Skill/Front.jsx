@@ -11,7 +11,7 @@ export default function Front() {
     Tailwind: 'Tailwind CSS - Tailwind is a utility-first CSS framework that provides low-level utility classes to build custom designs.',
     Bootstrap: 'Bootstrap - Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.',
     Git:'Git is a distributed version control system used for tracking changes in source code during software development.',
-    Next:'Next.js is a React framework for building server-rendered applications. It s often used for creating fast and scalable web applications, particularly those requiring server-side rendering, static site generation, or hybrid rendering.'
+    NextJs:'Next.js is a React framework for building server-rendered applications. It s often used for creating fast and scalable web applications, particularly those requiring server-side rendering, static site generation, or hybrid rendering.'
     
 
   });
@@ -25,7 +25,7 @@ export default function Front() {
     Tailwind: 'https://img.icons8.com/color/48/000000/tailwind-css.png',
     Bootstrap: 'https://img.icons8.com/color/48/000000/bootstrap.png',
     Git:'https://img.icons8.com/color/48/000000/git.png',
-    Next:'https://img.icons8.com/color/48/000000/nextjs.png',
+    NextJs:'https://img.icons8.com/color/48/000000/nextjs.png',
 
   });
 
