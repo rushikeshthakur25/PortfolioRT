@@ -25,7 +25,7 @@ export default function Front() {
     Tailwind: 'https://img.icons8.com/color/48/000000/tailwind-css.png',
     Bootstrap: 'https://img.icons8.com/color/48/000000/bootstrap.png',
     Git:'https://img.icons8.com/color/48/000000/git.png',
-    Next:'https://img.icons8.com/color/48/000000/next.png',
+    Next:'https://img.icons8.com/color/48/000000/nextjs.png',
 
   });
 
