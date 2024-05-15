@@ -7,7 +7,9 @@ export default function Backend() {
     Django: 'Django - Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design.',
     'Node Js': 'Node.js - Node.js is an open-source, cross-platform JavaScript runtime environment that executes JavaScript code outside a web browser.',
     API: 'API - An Application Programming Interface (API) is a set of rules and protocols for building and interacting with software applications.',
-    
+    Git:'Git is a distributed version control system used for tracking changes in source code during software development.',
+    NextJs:'Next.js is a React framework for building server-rendered applications. It s often used for creating fast and scalable web applications, particularly those requiring server-side rendering, static site generation, or hybrid rendering.'
+
   });
 
   const [valueIcons] = useState({
@@ -15,7 +17,8 @@ export default function Backend() {
     Django: 'https://img.icons8.com/color/48/000000/django.png',
     'Node Js': 'https://img.icons8.com/color/48/000000/nodejs.png',
     API: 'https://img.icons8.com/color/48/000000/api-settings.png',
-    
+    Git:'https://img.icons8.com/color/48/000000/git.png',
+    NextJs:'https://img.icons8.com/color/48/000000/nextjs.png',
   });
 
   const handleClick = (value) => {
