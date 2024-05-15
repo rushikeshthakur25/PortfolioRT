@@ -22,7 +22,7 @@ export default function Security() {
 
   return (
     <>
-      <div className="bg-black p-6 rounded-lg shadow-md">
+      <div className="bg-gray-900 p-6 rounded-lg shadow-md">
         <h3 className="text-xl font-semibold text-orange-700 mb-4">Security</h3>
         <div className='grid grid-cols-2 gap-3 place-content-center h-auto'>
           {Object.keys(valueInfo).map((value) => (

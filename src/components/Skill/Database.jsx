@@ -18,7 +18,7 @@ export default function Database() {
 
   return (
     <>
-      <div className="bg-black p-6 rounded-lg w-auto shadow-md">
+      <div className="bg-gray-900 p-6 rounded-lg w-auto shadow-md">
         <h3 className="text-xl font-semibold text-orange-700 mb-4">Database</h3>
         <div className='grid grid-cols-2 gap-2 place-content-center h-auto'>
           {Object.keys(valueInfo).map((value) => (

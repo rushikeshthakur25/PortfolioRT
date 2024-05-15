@@ -3,27 +3,27 @@ import Front from './Front'
 import Backend from './Backend'
 import Database from './Database'
 import Security from './Security'
-import Project from '../Project/Project'
+import Version_control from './Version_control'
 import res from "../../assets/img/resume.png";
 
 
 export default function Skill() {
   return (
     <>
-      <section className=" py-16">
-        <div className="container mx-auto px-5">
+      <section className=" py-16 ">
+        <div className="container mx-auto  px-5">
           <h1 className="text-4xl font-bold text-center text-orange-600 my-8">Skills</h1>
           <p className="text-lg text-gray-700 text-center mb-8">Here's some Develops Skills...</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Front />
             <Backend />
             <Database />
+            <Version_control/>
             <Security />
           </div>
         </div>
       </section>
-      <Project />
-      <aside className="relative overflow-hidden text-black rounded-lg sm:mx-16 mx-2 sm:py-16">
+      <aside className="relative overflow-hidden text-white rounded-lg sm:mx-16 mx-2 sm:py-16">
                 <div className="relative z-10 max-w-screen-xl px-4  pb-20 pt-10 sm:py-24 mx-auto sm:px-6 lg:px-8">
                     <div className="max-w-xl sm:mt-1 mt-80 space-y-8 text-center sm:text-right sm:ml-auto">
                         <h2 className="text-4xl font-bold sm:text-5xl">

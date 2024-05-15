@@ -10,7 +10,7 @@ export default function Front() {
     'React Js': 'React.js - React is an open-source, front-end JavaScript library for building user interfaces or UI components.',
     Tailwind: 'Tailwind CSS - Tailwind is a utility-first CSS framework that provides low-level utility classes to build custom designs.',
     Bootstrap: 'Bootstrap - Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.',
-    Git:'Git is a distributed version control system used for tracking changes in source code during software development.'
+    
 
   });
 
@@ -20,9 +20,9 @@ export default function Front() {
     JS: 'https://img.icons8.com/color/48/000000/javascript.png',
     Python: 'https://img.icons8.com/color/48/000000/python.png',
     'React Js': 'https://img.icons8.com/color/48/000000/react-native.png',
-    Tailwind: 'https://img.icons8.com/color/48/000000/tailwind-css.png',
+    Tailwind: 'https://img.icons8.com/fluency/48/tailwind_css.png',
     Bootstrap: 'https://img.icons8.com/color/48/000000/bootstrap.png',
-    Git:'https://img.icons8.com/color/48/000000/git.png'
+
 
   });
 
@@ -32,7 +32,7 @@ export default function Front() {
 
   return (
     <>
-      <div className="bg-black p-6 rounded-lg w-auto shadow-md">
+      <div className="bg-gray-900 p-6 rounded-lg w-auto shadow-md">
         <h3 className="text-xl font-semibold text-orange-700 mb-4">Frontend</h3>
         <div className='grid grid-cols-3 gap-3 place-content-center h-auto '>
           {Object.keys(valueInfo).map((value) => (
