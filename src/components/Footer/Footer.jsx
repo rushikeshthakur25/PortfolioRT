@@ -32,6 +32,10 @@ export default function Footer() {
                             <img src="https://img.icons8.com/fluency/48/twitter-circled.png" width={25} alt="X" srcset="" />
                             <span className="sr-only">Twitter page</span>
                         </Link>
+                        <Link to="https://tryhackme.com/p/cyberip" className="text-orange-600">
+                            <img src="https://img.icons8.com/stickers/100/hacker.png" width={25} alt="X" srcset="" />
+                            <span className="sr-only">TryHackme page</span>
+                        </Link>
                     </div>
                 </div>
             </div>

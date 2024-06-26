@@ -24,11 +24,11 @@ export default function Backend() {
 
   return (
     <>
-      <div className="bg-gray-900 p-6 rounded-lg w-auto shadow-md">
-        <h3 className="text-xl font-semibold text-orange-700 mb-4">Backend</h3>
+      <div className="bg-black border border-gray-400 hover:border-gray-500 p-6 rounded-lg w-auto shadow-md">
+        <h3 className="text-xl font-semibold text-orange-700 mb-4"><samp className='font-bold text-4xl font-serif'>B</samp>ackend</h3>
         <div className='grid grid-cols-3 gap-3 place-content-center h-auto '>
           {Object.keys(valueInfo).map((value) => (
-            <div key={value} onClick={() => handleClick(value)} className={`flex flex-col items-center cursor-pointer transition duration-300 hover:bg-gray-600 hover:text-white rounded-lg p-2 ${clickedValue === value && 'bg-gray-600 text-white'}`}>
+            <div key={value} onClick={() => handleClick(value)} className={`flex flex-col items-center cursor-pointer transition duration-300 hover:bg-orange-600 hover:text-white rounded-lg p-2 ${clickedValue === value && 'bg-gray-600 text-white'}`}>
               <img src={valueIcons[value]} alt={value} className="w-12 h-12 mb-1" />
               <p className="text-gray-200">{value}</p>
             </div>

@@ -105,11 +105,11 @@ export default function HomePage() {
     return (
         <>
         <div className="container mx-auto ">
-            <h1 className="text-4xl font-bold text-center text-orange-600 my-8">Projects</h1>
+            <h1 className="text-3xl  text-center text-orange-600 my-8"><samp className='font-bold text-4xl font-serif'>P</samp>rojects</h1>
             <p className="text-lg text-gray-700 text-center mb-8">Here's some information about Projects...</p>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {projects.map((project, index) => (
-                    <div key={index} className="bg-gray-900 p-6 rounded-md shadow-lg hover:bg-gray-800 transition duration-300">
+                    <div key={index} className="bg-black p-6 rounded-md shadow-lg border border-gray-400 hover:border-gray-500 transition duration-300">
                         <img src={project.icon} alt={project.name} className="w-30 h-30 mx-auto mb-4" />
                         <h3 className="text-xl font-semibold mb-2 text-white">{project.name}</h3>
                         <p className="text-gray-300 mb-4">{project.description}</p>
