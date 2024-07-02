@@ -17,7 +17,7 @@ const HackerLoader = () => {
 
   return (
     <div className="loader flex flex-col justify-center items-center h-screen bg-black text-red-600">
-      <div className="alert text-4xl mb-4">Virus downloding...</div>
+      {/* <div className="alert text-4xl mb-4">Virus downloding...</div> */}
       <div className="loading-container">
         <div className="loading-parent">
           <div className="loading-child" style={{ transform: `rotate(${progress * 3.6}deg)` }}></div>
