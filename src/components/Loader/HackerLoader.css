@@ -1,0 +1,58 @@
+/* src/components/HackerLoader.css */
+.alert {
+    animation: flicker-alert 1.5s infinite;
+  }
+  
+  @keyframes flicker-alert {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
+    20%, 22%, 24%, 55% { opacity: 0; }
+  }
+  
+  .loading-container {
+    position: relative;
+    width: 200px; /* Adjust the width of the loading container */
+    height: 200px; /* Adjust the height of the loading container */
+    margin-top: 2rem; /* Margin spacing from the alert text */
+  }
+  
+  .loading-parent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Creates a circular shape */
+    background-color: #070606; /* Color of the loading circle */
+    overflow: hidden; /* Hides the overflow of the loading circle */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loading-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 8px solid transparent;
+    border-top-color: green; /* Color of the loading circle */
+    animation: rotate 1s linear infinite;
+  }
+  
+  @keyframes rotate {
+    100% { transform: rotate(360deg); }
+  }
+  
+  .loading-text {
+    margin-top: 1rem; /* Adjust spacing between loading circles and text */
+    text-align: center;
+  }
+  
+  .progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
