@@ -82,7 +82,7 @@ export default function Home() {
                             </span>
 
                             <h2 class="mt-1 font-semibold text-base sm:text-lg text-white ">
-                            <samp className='font-bold text-4xl font-serif'>E</samp>ducation
+                                <samp className='font-bold text-4xl font-serif'>E</samp>ducation
                             </h2>
                             <p class="sm:mt-1 block text-sm sm:text-base text-gray-400">
                                 B.Tech in Computer Engineering: Acquired comprehensive knowledge in computer science, programming, and engineering principles.
@@ -98,7 +98,7 @@ export default function Home() {
                                 </div>
                             </span>
                             <h2 class="mt-1 font-semibold text-base sm:text-lg text-white">
-                            <samp className='font-bold text-4xl font-serif'>W</samp>ork Experience
+                                <samp className='font-bold text-4xl font-serif'>W</samp>ork Experience
                             </h2>
                             <p class="sm:mt-1 block text-sm sm:text-base text-gray-400"> Intern at ProsperTech: Engaged in developing web projects,acquiring hands-on development experience.
                             </p>
@@ -115,7 +115,7 @@ export default function Home() {
                             </span>
 
                             <h2 class="mt-1 font-semibold text-base sm:text-lg text-white">
-                            <samp className='font-bold text-4xl font-serif'>S</samp>ecurity Experience </h2>
+                                <samp className='font-bold text-4xl font-serif'>S</samp>ecurity Experience </h2>
                             <p class="sm:mt-1 block text-sm sm:text-base text-gray-400"> Participated in bug bounty programs on platforms like HackerOne and Bugcrowd, focusing on identifying and fixing security vulnerabilities in web applications.
                             </p>
                         </div>
@@ -129,7 +129,7 @@ export default function Home() {
                                 </div>
                             </span>
                             <h2 class="mt-1 font-semibold text-base sm:text-lg text-white">
-                            <samp className='font-bold text-3xl font-serif'>C</samp>ertifications </h2>
+                                <samp className='font-bold text-3xl font-serif'>C</samp>ertifications </h2>
                             <p class="sm:mt-1 block text-sm sm:text-base text-gray-400">Certified Prasad Computer: Obtained certification in web development, demonstrating proficiency in various web technologies.
                             </p>
                         </div>
