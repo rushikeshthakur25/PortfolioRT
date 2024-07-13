@@ -1,8 +1,8 @@
 import React from 'react';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import man from '../../assets/img/man.png';
-import { FaCode, FaPalette, FaShieldAlt, FaBriefcase, FaGraduationCap, FaCertificate, FaLock } from 'react-icons/fa';
+import me from '../../assets/img/me.jpg';
+import { FaCode, FaPalette, FaShieldAlt } from 'react-icons/fa';
 
 
 export default function Home() {
@@ -31,16 +31,16 @@ export default function Home() {
                                 <h3 className="text-xl font-semibold text-fuchsia-700 mb-4 "><samp className='font-bold text-4xl font-serif'>W</samp>eb Development</h3>
                                 <p className="text-gray-400 ">Experienced in creating dynamic and responsive web applications, with a focus on user-friendly interfaces and efficient functionality</p>
                             </div>
-                            <div className="bg-black rounded-lg shadow-md flex flex-col items-center border border-gray-400 hover:border-gray-500 justify-center p-6 transform hover:-translate-y-1 transition-transform duration-300">
-                                <FaPalette size={48} color="#FFA500" className="mb-4" />
-                                <h3 className="text-xl font-semibold text-cyan-300 mb-4"><samp className='font-bold text-4xl font-serif '>D</samp>esign</h3>
-                                <p className="text-gray-400">Skilled in incorporating design elements that enhance user experience and promote accessibility across different devices and platforms</p>
-                            </div>
                             <div className="bg-black rounded-lg shadow-md flex flex-col items-center border border-gray-100 hover:border-gray-500 justify-center p-6 transform hover:-translate-y-1 transition-transform duration-300">
                                 <FaShieldAlt size={48} color="#FFA500" className="mb-4" />
-                                <h3 className="text-xl font-semibold text-orange-700 mb-4"><samp className='font-bold text-4xl font-serif'>S</samp>ecurity</h3>
+                                <h3 className="text-xl font-semibold text-orange-700 mb-4"><samp className='font-bold text-4xl font-serif'>C</samp>yber Security</h3>
                                 <p className="text-gray-400">Proficient in implementing security best practices such as input validation, authentication mechanisms, and encryption to protect against common threats like SQL injection, cross-site scripting (XSS), and CSRF attacks.</p>
                                 
+                            </div>
+                            <div className="bg-black rounded-lg shadow-md flex flex-col items-center border border-gray-400 hover:border-gray-500 justify-center p-6 transform hover:-translate-y-1 transition-transform duration-300">
+                                <FaPalette size={48} color="#FFA500" className="mb-4" />
+                                <h3 className="text-xl font-semibold text-cyan-300 mb-4"><samp className='font-bold text-4xl font-serif '>W</samp>eb Design</h3>
+                                <p className="text-gray-400">Skilled in incorporating design elements that enhance user experience and promote accessibility across different devices and platforms</p>
                             </div>
                         </div>
                     </div>
@@ -52,8 +52,8 @@ export default function Home() {
             <div className="w-full">
                 <div className="container m-auto px-6 text-gray-600 md:px-6 xl:px-6">
                     <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
-                        <div className="md:5/12 lg:w-5/12 ">
-                            <img src={man} alt="image" />
+                        <div className="md:4/12 lg:w-4/12 ">
+                            <img src={me} alt="image" className='border-solid rounded-full ' />
                         </div>
                         <div className="md:7/12 lg:w-6/12">
                             <h2 className="text-2xl text-orange-700 font-bold md:text-4xl">
@@ -81,8 +81,8 @@ export default function Home() {
                                 </div>
                             </span>
 
-                            <h2 class="mt-1 font-semibold text-base sm:text-lg text-white ">
-                                <samp className='font-bold text-4xl font-serif'>E</samp>ducation
+                            <h2 class="mt-1 font-semibold text-base sm:text-lg text-red-700 ">
+                                <samp className='font-bold text-4xl font-serif '>E</samp>ducation
                             </h2>
                             <p class="sm:mt-1 block text-sm sm:text-base text-gray-400">
                                 B.Tech in Computer Engineering: Acquired comprehensive knowledge in computer science, programming, and engineering principles.
@@ -97,7 +97,7 @@ export default function Home() {
                                     </svg>
                                 </div>
                             </span>
-                            <h2 class="mt-1 font-semibold text-base sm:text-lg text-white">
+                            <h2 class="mt-1 font-semibold text-base sm:text-lg text-pink-500">
                                 <samp className='font-bold text-4xl font-serif'>W</samp>ork Experience
                             </h2>
                             <p class="sm:mt-1 block text-sm sm:text-base text-gray-400"> Intern at ProsperTech: Engaged in developing web projects,acquiring hands-on development experience.
@@ -114,7 +114,7 @@ export default function Home() {
                                 </div>
                             </span>
 
-                            <h2 class="mt-1 font-semibold text-base sm:text-lg text-white">
+                            <h2 class="mt-1 font-semibold text-base sm:text-lg text-yellow-400">
                                 <samp className='font-bold text-4xl font-serif'>S</samp>ecurity Experience </h2>
                             <p class="sm:mt-1 block text-sm sm:text-base text-gray-400"> Participated in bug bounty programs on platforms like HackerOne and Bugcrowd, focusing on identifying and fixing security vulnerabilities in web applications.
                             </p>
@@ -128,7 +128,7 @@ export default function Home() {
                                     </svg>
                                 </div>
                             </span>
-                            <h2 class="mt-1 font-semibold text-base sm:text-lg text-white">
+                            <h2 class="mt-1 font-semibold text-base sm:text-lg text-blue-400">
                                 <samp className='font-bold text-3xl font-serif'>C</samp>ertifications </h2>
                             <p class="sm:mt-1 block text-sm sm:text-base text-gray-400">Certified Prasad Computer: Obtained certification in web development, demonstrating proficiency in various web technologies.
                             </p>

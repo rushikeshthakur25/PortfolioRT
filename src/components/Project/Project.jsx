@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import blog from '../../assets/img/blog.png';
 import photo from '../../assets/img/photo.png'
 import chat from '../../assets/img/chat.png';
-import pass from '../../assets/img/pass.png';
-import cr from '../../assets/img/cr.png'
+import news from '../../assets/img/news.png';
+import xss from '../../assets/img/xss.png'
 import fai from '../../assets/img/fai.png'
 export default function HomePage() {
     const [projects] = useState([
@@ -74,26 +74,31 @@ export default function HomePage() {
             githubIcon: 'https://img.icons8.com/material-outlined/24/000000/github.png'
         },
         {
-            name: 'RealTimeXchange',
-            githubLink: 'https://github.com/rushikeshthakur25/currencyConvertor',
-            description: 'Currency converter project with real-time exchange rates,powered by API integration. Simplify financial transactions with RateSwift.',
-            icon: cr,
+            name: 'xss-payload-generator',
+            githubLink: 'https://github.com/rushikeshthakur25/xss-payload-generator',
+            link: 'https://xss-payload-generator.netlify.app',
+            description: '🔍 Dive into my latest project: the XSS Payload Generator! Built using React.js & Tailwind CSS, this tool empowers developers to create and test XSS payloads effectively.🛡️ Understand web security better with practical application.🔒 Remember, this is an educational tool intended for learning purposes only. Use responsibly!',
+            icon: xss,
             technologies: [
                 'https://img.icons8.com/color/48/000000/react-native.png',
-                'https://img.icons8.com/color/48/000000/api-settings.png',
+                'https://img.icons8.com/fluency/48/tailwind_css.png',
 
             ],
-            githubIcon: 'https://img.icons8.com/material-outlined/24/000000/github.png'
+            githubIcon: 'https://img.icons8.com/material-outlined/24/000000/github.png',
+            demo: 'https://img.icons8.com/fluency-systems-regular/48/trial-version.png'
+            
         },
         {
-            name: 'Auto Password Generator',
-            githubLink: 'https://github.com/rushikeshthakur25/passwordgenerator',
-            link: 'https://auto-password.netlify.app',
-            description: 'The Auto Password Generator web application is a tool designed to assist users in creating strong and secure passwords effortlessly. With just a click of a button, users can generate a random password consisting of a mix of lowercase letters, uppercase letters, numbers, and special characters.',
-            icon: pass,
+            name: 'Security-news',
+            githubLink: 'https://github.com/rushikeshthakur25/cybersecurity-news',
+            link: 'https://security-news.netlify.app',
+            description: 'I am thrilled to share my new project with you all: Cybersecurity News and Hacking Tools! 🛡️This project is a one-stop destination for the latest news in cybersecurity and essential hacking tools. Whether you re a seasoned cybersecurity professional or just starting out, this site has something for everyone. Here are some of the key features🔍 Daily Cyber Tips Stay updated with the latest tips and tricks to enhance your cybersecurity skills',
+            icon: news,
             technologies: [
                 'https://img.icons8.com/color/48/000000/react-native.png',
                 'https://img.icons8.com/color/48/crane-hook.png',
+                'https://img.icons8.com/color/48/000000/api-settings.png',
+                'https://img.icons8.com/fluency/48/tailwind_css.png'
 
             ],
             githubIcon: 'https://img.icons8.com/material-outlined/24/000000/github.png',
