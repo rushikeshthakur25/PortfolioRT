@@ -1,7 +1,7 @@
 import React from 'react';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import me from '../../assets/img/me.jpg';
+import man from '../../assets/img/man.png';
 import { FaCode, FaPalette, FaShieldAlt } from 'react-icons/fa';
 
 
@@ -53,7 +53,7 @@ export default function Home() {
                 <div className="container m-auto px-6 text-gray-600 md:px-6 xl:px-6">
                     <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
                         <div className="md:4/12 lg:w-4/12   ">
-                            <img src={me} alt="image" className='border-solid rounded-3xl opacity-50  ' />
+                            <img src={man} alt="image" className='border-solid rounded-3xl opacity-50  ' />
                         </div>
                         <div className="md:7/12 lg:w-6/12">
                             <h2 className="text-2xl text-orange-700 font-bold md:text-4xl">
