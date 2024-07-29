@@ -37,9 +37,9 @@ export default function Header() {
                         <span className="tooltip">Skills</span>
                     </NavLink>
                     {/* Contact Link */}
-                    <NavLink to="/contact" className="nav-link flex items-center" title="Contact">
+                    <NavLink to="/contact" className="nav-link flex items-center" title="Achievements">
                        <img src="https://img.icons8.com/fluency-systems-regular/48/FD7E14/phone-disconnected.png" width={25} alt="" srcset="" />
-                        <span className="tooltip">Contact</span>
+                        <span className="tooltip">Achievements</span>
                     </NavLink>
                 </nav>
             </div>

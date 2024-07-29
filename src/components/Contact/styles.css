@@ -1,0 +1,113 @@
+@keyframes borderColorAnimation1 {
+    0% {
+      border-color: rgba(255, 99, 71, 0.5); /* Tomato color */
+    }
+    50% {
+      border-color: rgba(255, 99, 71, 1); /* Tomato color full opacity */
+    }
+    100% {
+      border-color: rgba(255, 99, 71, 0.5); /* Tomato color */
+    }
+  }
+  
+  @keyframes borderColorAnimation2 {
+    0% {
+      border-color: rgba(0, 191, 255, 0.5); /* DeepSkyBlue color */
+    }
+    50% {
+      border-color: rgba(0, 191, 255, 1); /* DeepSkyBlue color full opacity */
+    }
+    100% {
+      border-color: rgba(0, 191, 255, 0.5); /* DeepSkyBlue color */
+    }
+  }
+  
+  @keyframes borderColorAnimation3 {
+    0% {
+      border-color: rgba(34, 193, 195, 0.5); /* Turquoise color */
+    }
+    50% {
+      border-color: rgba(34, 193, 195, 1); /* Turquoise color full opacity */
+    }
+    100% {
+      border-color: rgba(34, 193, 195, 0.5); /* Turquoise color */
+    }
+  }
+  
+  @keyframes borderColorAnimation4 {
+    0% {
+      border-color: rgba(253, 187, 45, 0.5); /* Gold color */
+    }
+    50% {
+      border-color: rgba(253, 187, 45, 1); /* Gold color full opacity */
+    }
+    100% {
+      border-color: rgba(253, 187, 45, 0.5); /* Gold color */
+    }
+  }
+  
+  @keyframes rotateBorder {
+    0% {
+      border-width: 2px;
+    }
+    100% {
+      border-width: 5px;
+    }
+  }
+  
+  .border-animated-1::before,
+  .border-animated-2::before,
+  .border-animated-3::before,
+  .border-animated-4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    border: 5px solid transparent;
+    z-index: -1;
+    animation: rotateBorder 2s infinite linear;
+  }
+  
+  .border-animated-1 {
+    position: relative;
+    animation: borderColorAnimation1 1.5s infinite;
+  }
+  
+  .border-animated-2 {
+    position: relative;
+    animation: borderColorAnimation2 1.5s infinite;
+  }
+  
+  .border-animated-3 {
+    position: relative;
+    animation: borderColorAnimation3 1.5s infinite;
+  }
+  
+  .border-animated-4 {
+    position: relative;
+    animation: borderColorAnimation4 1.5s infinite;
+  }
+  @keyframes gradientTextAnimation {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+  
+  .gradient-text {
+    background: linear-gradient(45deg, #ff0080, #ff8c00, #00bfff, #7fff00, #ff00ff);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientTextAnimation 3s linear infinite;
+    font-weight: bolder; /* Optional, to make the gradient more prominent */
+  }
+    

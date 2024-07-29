@@ -5,6 +5,7 @@ import chat from '../../assets/img/chat.png';
 import news from '../../assets/img/news.png';
 import xss from '../../assets/img/xss.png'
 import fai from '../../assets/img/fai.png'
+import './styles.css';
 export default function HomePage() {
     const [projects] = useState([
         {
@@ -110,7 +111,7 @@ export default function HomePage() {
     return (
         <>
         <div className="container mx-auto ">
-            <h1 className="text-3xl  text-center text-orange-600 my-8"><samp className='font-bold text-4xl font-serif'>P</samp>rojects</h1>
+            <h1 className="text-3xl sm:text-4xl gradient-text font-extrabold tracking-tight mb-8 text-center my-8"><samp className='font-bold text-4xl font-serif'>P</samp>rojects</h1>
             <p className="text-lg text-gray-700 text-center mb-8">Here's some information about Projects...</p>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {projects.map((project, index) => (

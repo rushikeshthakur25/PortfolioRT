@@ -1,72 +1,62 @@
-import React from 'react'
+// src/Contact.jsx
+import React from 'react';
+import './styles.css'; // Ensure to import the CSS file where the gradient effect is defined
+
+const wallOfFameCompanies = [
+  { name: 'Company A', link: 'https://www.companya.com' },
+  { name: 'Company B', link: 'https://www.companyb.com' },
+  { name: 'Company C', link: 'https://www.companyc.com' },
+  { name: 'Company D', link: 'https://www.companyd.com' },
+  
+];
+
+const bugBountyCompanies = [
+  { name: 'Company U' },
+  { name: 'Company V' },
+  { name: 'Company W' },
+  { name: 'Company X' },
+  { name: 'Company Y' },
+  { name: 'Company Z' },
+  { name: 'Company AA' },
+  { name: 'Company BB' },
+  
+];
 
 export default function Contact() {
-    return (
-        <div className="relative flex items-top justify-center min-h-[700px] bg-black sm:items-center sm:pt-0">
-            <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                <div className="mt-8 overflow-hidden">
-                    <div className="grid grid-cols-1 md:grid-cols-2">
-                        <div className="p-6 mr-2 bg-black rounded-lg shadow-md sm:rounded-lg">
-                            <h1 className="text-3xl sm:text-4xl text-orange-600 font-extrabold tracking-tight">
-                                Get in touch: 
-                            </h1>
-                            <p className="text-normal text-lg sm:text-xl font-medium text-gray-600 mt-2">
-                                Fill in the form to start a conversation
-                            </p>
-
-                        </div>
-
-                        <form className="p-6 flex flex-col justify-center">
-                            <div className="flex flex-col">
-                                <label for="name" className="hidden">
-                                    Full Name
-                                </label>
-                                <input
-                                    type="name"
-                                    name="name"
-                                    id="name"
-                                    placeholder="Full Name"
-                                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
-                                />
-                            </div>
-
-                            <div className="flex flex-col mt-2">
-                                <label for="email" className="hidden">
-                                    Email
-                                </label>
-                                <input
-                                    type="email"
-                                    name="email"
-                                    id="email"
-                                    placeholder="Email"
-                                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
-                                />
-                            </div>
-
-                            <div className="flex flex-col mt-2">
-                                <label for="tel" className="hidden">
-                                    Number
-                                </label>
-                                <input
-                                    type="tel"
-                                    name="tel"
-                                    id="tel"
-                                    placeholder="Telephone Number"
-                                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
-                                />
-                            </div>
-
-                            <button
-                                type="submit"
-                                className="md:w-32 bg-orange-700 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-orange-600 transition ease-in-out duration-300"
-                            >
-                                Submit
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
+  return (
+    <section className="text-gray-600 body-font bg-black min-h-screen flex flex-col justify-center items-center">
+      <div className="container px-5 py-24 mx-auto">
+        <h2 className="text-3xl sm:text-4xl gradient-text font-extrabold tracking-tight mb-8 text-center">Wall of Fame</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {wallOfFameCompanies.map((company, index) => {
+            const animationClass = `border-animated-${(index % 4) + 1}`;
+            return (
+              <div
+                className={`p-4 bg-black shadow-md rounded-lg flex flex-col items-center justify-between border border-gray-700 ${animationClass}`}
+                key={index}
+              >
+                <h3 className="text-lg font-bold text-gray-300">{company.name}</h3>
+                <a href={company.link} className="text-sm text-blue-500 hover:text-blue-700 mt-2">Visit Website</a>
+              </div>
+            );
+          })}
         </div>
-    );
-}
 
+        <h2 className="text-3xl sm:text-4xl gradient-text font-extrabold tracking-tight mb-8 text-center mt-16">Bug Bounty</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {bugBountyCompanies.map((company, index) => {
+            const animationClass = `border-animated-${(index % 4) + 1}`;
+            return (
+              <div
+                className={`p-4 bg-black shadow-md rounded-lg flex flex-col items-center justify-between border border-gray-700 ${animationClass}`}
+                key={index}
+              >
+                <h3 className="text-lg font-bold text-gray-300">{company.name}</h3>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
