@@ -38,8 +38,8 @@ export default function Header() {
                     </NavLink>
                     {/* Contact Link */}
                     <NavLink to="/contact" className="nav-link flex items-center" title="Achievements">
-                       <img src="https://img.icons8.com/fluency-systems-regular/48/FD7E14/phone-disconnected.png" width={25} alt="" srcset="" />
-                        <span className="tooltip">Achievements</span>
+                       <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-achievements-recruitment-agency-flaticons-flat-flat-icons-2.png" width={25} alt="" srcset="" />
+                        <span className="tooltip">Achieve</span>
                     </NavLink>
                 </nav>
             </div>

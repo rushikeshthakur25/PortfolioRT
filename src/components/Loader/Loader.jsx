@@ -51,7 +51,7 @@ const HackerLoader = () => {
         response = 'Opening the website...';
         setOutput(prevOutput => [...prevOutput, `user@website:~$ ${cmd}`, response]);
         setTimeout(() => {
-          window.location.href = 'https://rushikeshthakur.netlify.app/'; // Replace with your actual URL
+          window.location.href = '#'; // Replace with your actual URL
         }, redirectDelay);
         break;
       default:

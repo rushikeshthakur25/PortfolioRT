@@ -1,24 +1,16 @@
 // src/Contact.jsx
 import React from 'react';
-import './styles.css'; // Ensure to import the CSS file where the gradient effect is defined
+import './styles.css';
+
 
 const wallOfFameCompanies = [
-  { name: 'Company A', link: 'https://www.companya.com' },
-  { name: 'Company B', link: 'https://www.companyb.com' },
-  { name: 'Company C', link: 'https://www.companyc.com' },
-  { name: 'Company D', link: 'https://www.companyd.com' },
+  { name: 'N/A', link: 'https://www.companya.com' },
   
 ];
 
 const bugBountyCompanies = [
-  { name: 'Company U' },
-  { name: 'Company V' },
-  { name: 'Company W' },
-  { name: 'Company X' },
-  { name: 'Company Y' },
-  { name: 'Company Z' },
-  { name: 'Company AA' },
-  { name: 'Company BB' },
+  { name: 'github.com' },
+  { name: 'oppo.com' },
   
 ];
 
@@ -26,6 +18,7 @@ export default function Contact() {
   return (
     <section className="text-gray-600 body-font bg-black min-h-screen flex flex-col justify-center items-center">
       <div className="container px-5 py-24 mx-auto">
+        <h1 className="text-3xl sm:text-4xl gradient-text  tracking-tight mb-8 text-center my-8 text-orange-700"><samp className='font-bold text-4xl font-serif'>A</samp>chievements</h1>
         <h2 className="text-3xl sm:text-4xl gradient-text font-extrabold tracking-tight mb-8 text-center">Wall of Fame</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {wallOfFameCompanies.map((company, index) => {
@@ -42,7 +35,7 @@ export default function Contact() {
           })}
         </div>
 
-        <h2 className="text-3xl sm:text-4xl gradient-text font-extrabold tracking-tight mb-8 text-center mt-16">Bug Bounty</h2>
+        <h2 className="text-3xl sm:text-4xl gradient-text font-extrabold tracking-tight mb-8 text-center mt-16">Bug Report</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {bugBountyCompanies.map((company, index) => {
             const animationClass = `border-animated-${(index % 4) + 1}`;

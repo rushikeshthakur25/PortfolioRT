@@ -3,7 +3,6 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import man from '../../assets/img/man.png';
 import { FaCode, FaPalette, FaShieldAlt } from 'react-icons/fa';
-import './style.css';
 
 
 export default function Home() {
@@ -19,13 +18,13 @@ export default function Home() {
                     <FaCode size={64} color="#FFA500" className="mb-4" />
                 </div>
                 <div className="text-center mb-8">
-                    <h2 className="text-3xl  mb-8 text-cyan-200 font-mono  "><samp className='text-gray-200 text-center  '>Hi,I'M</samp><br /><samp className='text-3xl sm:text-4xl gradient-text font-extrabold tracking-tight mb-8 text-center'>Rushikesh Thakur</samp></h2>
+                    <h2 className="text-3xl  mb-8 text-cyan-200 font-mono  "><samp className='text-gray-200 text-center  '>Hi,I'M</samp><br /><samp className='text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 font-bold'>Rushikesh Thakur</samp></h2>
                     <p className="text-lg text-gray-700">I am an experienced <samp className='text-emerald-600 font-mono'>Full Stack Developer</samp> and <samp className=' text-orange-700 font-mono'>Cyber Security Analyst</samp >. Proficient in JavaScript, React.js, Next.js, Bootstrap, and Tailwind UI. <samp className=' text-green-900 font-mono'>Expert in bug bounty hunting</samp>, VAPT, and tools like <samp className=' text-cyan-700 font-mono'>Burp Suite, Nmap, and Wireshark</samp>. Skilled in managing DLP, proxies, and WAF, with <samp className=' text-fuchsia-700 font-mono'>a proven reduction in vulnerabilities</samp>. Passionate about secure and innovative tech projects. <samp className=' text-pink-700 font-mono'>Let's connect!</samp></p>
                 </div>
 
                 <section className="py-16">
                     <div className="container mx-auto px-4">
-                        <h2 className="text-3xl sm:text-4xl gradient-text font-extrabold tracking-tight mb-8 text-center"><samp className='font-bold text-4xl font-serif'>W</samp>hat I Do?</h2>
+                        <h2 className="text-3xl sm:text-4xl gradient-text tracking-tight mb-8 text-center text-orange-600"><samp className='font-bold text-4xl font-serif'>W</samp>hat I Do?</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                             <div className="bg-black rounded-lg shadow-md flex flex-col items-center border border-gray-400 hover:border-gray-500 justify-center p-6 transform hover:-translate-y-1 transition-transform duration-300">
                                 <FaCode size={48} color="#FFA500" className="mb-4" />
@@ -98,7 +97,7 @@ export default function Home() {
                                 </div>
                             </span>
                             <h2 class="mt-1 font-semibold text-base sm:text-lg text-pink-500">
-                                <samp className='font-bold text-4xl font-serif'>W</samp>ork Experience
+                                <samp className='font-bold text-4xl font-serif '>W</samp>ork Experience
                             </h2>
                             <p class="sm:mt-1 block text-sm sm:text-base text-gray-400"> Intern at ProsperTech: Engaged in developing web projects,acquiring hands-on development experience.
                             </p>
