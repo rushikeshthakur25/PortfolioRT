@@ -13,7 +13,7 @@ export default function Footer() {
                         <a href="/" className=" text-orange-400 font-bold hover:underline">
                             Rushikesh Thakur 
                         </a>
-                        . All Rights Reserved.
+                          . Cyber Security Researcher
                     </span>
                     <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
                         <Link to="linkedin.com/in/rushikeshthakur25/" className="text-orange-600 hover:text-gray-900">

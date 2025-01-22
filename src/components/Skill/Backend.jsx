@@ -12,7 +12,7 @@ export default function Backend() {
   });
 
   const [valueIcons] = useState({
-    'Express Js': 'https://img.icons8.com/color/48/000000/nodejs.png',
+    
     Django: 'https://img.icons8.com/color/48/000000/django.png',
     'Node Js': 'https://img.icons8.com/color/48/000000/nodejs.png',
     API: 'https://img.icons8.com/color/48/000000/api-settings.png'

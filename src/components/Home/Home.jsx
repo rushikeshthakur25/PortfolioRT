@@ -2,7 +2,10 @@ import React from 'react';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import man from '../../assets/img/man.png';
-import { FaCode, FaPalette, FaShieldAlt } from 'react-icons/fa';
+import './style.css';
+import Resume from '../Resume/resume'
+import { FaCode, FaShieldAlt, FaPalette, FaNetworkWired, FaMobileAlt, FaPython, FaTerminal } from 'react-icons/fa';
+
 
 
 export default function Home() {
@@ -18,32 +21,109 @@ export default function Home() {
                     <FaCode size={64} color="#FFA500" className="mb-4" />
                 </div>
                 <div className="text-center mb-8">
-                    <h2 className="text-3xl  mb-8 text-cyan-200 font-mono  "><samp className='text-gray-200 text-center  '>Hi,I'M</samp><br /><samp className='text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 font-bold'>Rushikesh Thakur</samp></h2>
-                    <p className="text-lg text-gray-700">I am an experienced <samp className='text-emerald-600 font-mono'>Full Stack Developer</samp> and <samp className=' text-orange-700 font-mono'>Cyber Security Analyst</samp >. Proficient in JavaScript, React.js, Next.js, Bootstrap, and Tailwind UI. <samp className=' text-green-900 font-mono'>Expert in bug bounty hunting</samp>, VAPT, and tools like <samp className=' text-cyan-700 font-mono'>Burp Suite, Nmap, and Wireshark</samp>. Skilled in managing DLP, proxies, and WAF, with <samp className=' text-fuchsia-700 font-mono'>a proven reduction in vulnerabilities</samp>. Passionate about secure and innovative tech projects. <samp className=' text-pink-700 font-mono'>Let's connect!</samp></p>
+                    <h2 className="text-3xl mb-8 text-cyan-200 font-mono">
+                        <samp className='text-gray-200 text-center'>Hi, I'M</samp><br />
+                        <samp className='text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-sky-400 font-bold'>Rushikesh Thakur</samp>
+                    </h2>
+                    <p className="text-lg text-gray-700">
+                        I am an <samp className='text-blue-600 font-mono'>Application Security Engineer</samp> and
+                        <samp className='text-orange-600 font-mono'> Bug Bounty Hunter</samp>, specializing in
+                        <samp className='text-red-500 font-mono'> Mobile app security</samp>,
+                        <samp className='text-green-700 font-mono'> Web security</samp>,
+                        <samp className='text-purple-500 font-mono'> API security</samp>, and
+                        <samp className='text-cyan-600 font-mono'> Network vulnerability assessment and penetration testing (VAPT)</samp>.
+                        With <samp className='text-indigo-600 font-mono'>[3] years Bug Bounty of experience</samp>, I am dedicated to identifying vulnerabilities and implementing robust security measures to protect applications.
+                        As an active <samp className='text-pink-600 font-mono'> Bug bounty hunter</samp>, I enjoy the challenge of discovering security flaws and contributing to the security community.
+                        I am committed to fostering a <samp className='text-yellow-600 font-mono'>Security-first mindset</samp> in development teams and continuously enhancing my knowledge of emerging threats and security practices.
+                    </p>
                 </div>
 
-                <section className="py-16">
+
+                <section className="py-16 bg-gray-900 text-white">
                     <div className="container mx-auto px-4">
-                        <h2 className="text-3xl sm:text-4xl gradient-text tracking-tight mb-8 text-center text-orange-600"><samp className='font-bold text-4xl font-serif'>W</samp>hat I Do?</h2>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                            <div className="bg-black rounded-lg shadow-md flex flex-col items-center border border-gray-400 hover:border-gray-500 justify-center p-6 transform hover:-translate-y-1 transition-transform duration-300">
-                                <FaCode size={48} color="#FFA500" className="mb-4" />
-                                <h3 className="text-xl font-semibold text-fuchsia-700 mb-4 "><samp className='font-bold text-4xl font-serif'>W</samp>eb Development</h3>
-                                <p className="text-gray-400 ">Experienced in creating dynamic and responsive web applications, with a focus on user-friendly interfaces and efficient functionality</p>
+                        <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-8 text-center text-orange-600">
+                            <span className="font-serif">W</span>hat I Do?
+                        </h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+
+                            {/* WebApp Pentesting */}
+                            <div className="flex flex-col items-center p-6 bg-black rounded-lg shadow-md border border-gray-400 hover:border-gray-500 transform hover:-translate-y-1 transition-transform duration-300">
+                                <div className="flex items-center justify-center mb-4">
+                                    <FaShieldAlt size={48} color="#FFA500" />
+                                </div>
+                                <h3 className="text-xl font-semibold text-orange-400 mb-4">
+                                    WebApp Pentesting
+                                </h3>
+                                <p className="text-gray-300 text-center">
+                                    Identifying vulnerabilities in web applications to enhance their security by simulating real-world attack scenarios.
+                                </p>
+                                <div className="w-full mt-4">
+                                    <div className="h-2 bg-gray-800 rounded-full overflow-hidden">
+                                        <div className="h-full bg-orange-400" style={{ width: "100%" }}></div>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="bg-black rounded-lg shadow-md flex flex-col items-center border border-gray-100 hover:border-gray-500 justify-center p-6 transform hover:-translate-y-1 transition-transform duration-300">
-                                <FaShieldAlt size={48} color="#FFA500" className="mb-4" />
-                                <h3 className="text-xl font-semibold text-orange-700 mb-4"><samp className='font-bold text-4xl font-serif'>C</samp>yber Security</h3>
-                                <p className="text-gray-400">Proficient in implementing security best practices such as input validation, authentication mechanisms, and encryption to protect against common threats like SQL injection, cross-site scripting (XSS), and CSRF attacks.</p>
+
+                            {/* API Pentesting */}
+                            <div className="flex flex-col items-center p-6 bg-black rounded-lg shadow-md border border-gray-400 hover:border-gray-500 transform hover:-translate-y-1 transition-transform duration-300">
+                                <div className="flex items-center justify-center mb-4">
+                                    <FaNetworkWired size={48} color="#FFA500" />
+                                </div>
+                                <h3 className="text-xl font-semibold text-cyan-300 mb-4">
+                                    API Pentesting
+                                </h3>
+                                <p className="text-gray-300 text-center">
+                                    Ensuring secure API endpoints by identifying and mitigating vulnerabilities like authentication bypasses and data leaks.
+                                </p>
+                                <div className="w-full mt-4">
+                                    <div className="h-2 bg-gray-800 rounded-full overflow-hidden">
+                                        <div className="h-full bg-cyan-400" style={{ width: "75%" }}></div>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="bg-black rounded-lg shadow-md flex flex-col items-center border border-gray-400 hover:border-gray-500 justify-center p-6 transform hover:-translate-y-1 transition-transform duration-300">
-                                <FaPalette size={48} color="#FFA500" className="mb-4" />
-                                <h3 className="text-xl font-semibold text-cyan-300 mb-4"><samp className='font-bold text-4xl font-serif '>W</samp>eb Design</h3>
-                                <p className="text-gray-400">Skilled in incorporating design elements that enhance user experience and promote accessibility across different devices and platforms</p>
+
+                            {/* Network VAPT */}
+                            <div className="flex flex-col items-center p-6 bg-black rounded-lg shadow-md border border-gray-400 hover:border-gray-500 transform hover:-translate-y-1 transition-transform duration-300">
+                                <div className="flex items-center justify-center mb-4">
+                                    <FaTerminal size={48} color="#FFA500" />
+                                </div>
+                                <h3 className="text-xl font-semibold text-green-400 mb-4">
+                                    Network VAPT
+                                </h3>
+                                <p className="text-gray-300 text-center">
+                                    Conducting comprehensive network vulnerability assessments and penetration tests to ensure robust network security.
+                                </p>
+                                <div className="w-full mt-4">
+                                    <div className="h-2 bg-gray-800 rounded-full overflow-hidden">
+                                        <div className="h-full bg-green-400" style={{ width: "88%" }}></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Mobile App Pentesting */}
+                            <div className="flex flex-col items-center p-6 bg-black rounded-lg shadow-md border border-gray-400 hover:border-gray-500 transform hover:-translate-y-1 transition-transform duration-300">
+                                <div className="flex items-center justify-center mb-4">
+                                    <FaMobileAlt size={48} color="#FFA500" />
+                                </div>
+                                <h3 className="text-xl font-semibold text-pink-400 mb-4">
+                                    Mobile App Pentesting
+                                </h3>
+                                <p className="text-gray-300 text-center">
+                                    Assessing mobile applications for security flaws to prevent data breaches and unauthorized access.
+                                </p>
+                                <div className="w-full mt-4">
+                                    <div className="h-2 bg-gray-800 rounded-full overflow-hidden">
+                                        <div className="h-full bg-pink-400" style={{ width: "59%" }}></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
+
+
+
+
             </div>
 
 
@@ -64,7 +144,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div class="mt-4 bg-black ">
+                {/* <div class="mt-4 bg-black ">
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-black  ">
 
@@ -133,7 +213,8 @@ export default function Home() {
                             </p>
                         </div>
                     </div>
-                </div>
+                </div> */}
+                <Resume/>
 
                 {/* Slider */}
 

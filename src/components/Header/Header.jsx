@@ -20,26 +20,26 @@ export default function Header() {
                         )}
                     </svg>
                 </button>
-                <nav className={`lg:flex lg:space-x-8 ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
+                <nav className={`lg:flex lg:space-x-8 ${isMobileMenuOpen ? 'block' : 'hidden'} space-y-4 lg:space-y-0 mt-4 lg:mt-0`}>
                     {/* Home Link */}
-                    <NavLink to="/" className="nav-link flex items-center" title="Home">
-                        <img src="https://img.icons8.com/fluency-systems-filled/48/FD7E14/home.png" width={25} alt="" srcset="" />
+                    <NavLink to="/" className="nav-link flex items-center gap-2 px-4 py-2 rounded hover:bg-orange-800">
+                        <img src="https://img.icons8.com/fluency-systems-filled/48/FD7E14/home.png" width={25} alt="Home" />
                         <span className="tooltip">Home</span>
                     </NavLink>
                     {/* About Link */}
-                    <NavLink to="/project" className="nav-link flex items-center" title="About">
-                         <img src="https://img.icons8.com/fluency-systems-filled/48/FD7E14/project-management.png" width={25} alt="" srcset="" />   
-                        <span className="tooltip">Porjects</span>
+                    <NavLink to="/project" className="nav-link flex items-center gap-2 px-4 py-2 rounded hover:bg-orange-800">
+                        <img src="https://img.icons8.com/fluency-systems-filled/48/FD7E14/project-management.png" width={25} alt="Projects" />
+                        <span className="tooltip">Projects</span>
                     </NavLink>
                     {/* Skills Link */}
-                    <NavLink to="/skill" className="nav-link flex items-center" title="Skills">
-                        <img src="https://img.icons8.com/windows/32/FD7E14/development-skill.png" alt="" width={25} srcset="" />
+                    <NavLink to="/skill" className="nav-link flex items-center gap-2 px-4 py-2 rounded hover:bg-orange-800">
+                        <img src="https://img.icons8.com/windows/32/FD7E14/development-skill.png" width={25} alt="Skills" />
                         <span className="tooltip">Skills</span>
                     </NavLink>
                     {/* Contact Link */}
-                    <NavLink to="/contact" className="nav-link flex items-center" title="Achievements">
-                       <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-achievements-recruitment-agency-flaticons-flat-flat-icons-2.png" width={25} alt="" srcset="" />
-                        <span className="tooltip">Achieve</span>
+                    <NavLink to="/contact" className="nav-link flex items-center gap-2 px-4 py-2 rounded hover:bg-orange-800">
+                        <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-achievements-recruitment-agency-flaticons-flat-flat-icons-2.png" width={25} alt="Achievements" />
+                        <span className="tooltip">Achievements</span>
                     </NavLink>
                 </nav>
             </div>
