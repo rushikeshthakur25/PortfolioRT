@@ -1,85 +1,79 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { FaGraduationCap, FaLaptopCode, FaBug, FaUserShield } from "react-icons/fa";
 
 const TimelineSection = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
-  // Timeline Data
   const educationData = [
-    { title: "10th Standard", description: "Achieved foundational education.", dotColor: "bg-blue-500" },
-    { title: "12th Standard", description: "Specialized in Science stream.", dotColor: "bg-yellow-500" },
-    { title: "B.Tech", description: "Graduated in Computer Engineering.", dotColor: "bg-green-500" },
+    { title: "10th Standard", description: "Achieved foundational education.", icon: <FaGraduationCap className="text-blue-500 w-6 h-6" /> },
+    { title: "12th Standard", description: "Specialized in Science stream.", icon: <FaGraduationCap className="text-yellow-500 w-6 h-6" /> },
+    { title: "B.Tech", description: "Graduated in Computer Engineering with a focus on Cybersecurity and Ethical Hacking.", icon: <FaGraduationCap className="text-green-500 w-6 h-6" /> },
+    { title: "Certified Ethical Hacker", description: "Completed CEH certification with hands-on labs.", icon: <FaUserShield className="text-indigo-500 w-6 h-6" /> },
   ];
 
   const workData = [
-    { title: "Intern at ProsperTech", description: "Web development projects.", dotColor: "bg-red-500" },
-    { title: "Security Analyst", description: "Worked on penetration testing.", dotColor: "bg-purple-500" },
-    { title: "Bug Bounty Hunter", description: "Identified and fixed security vulnerabilities.", dotColor: "bg-teal-500" },
+    { title: "Intern at ProsperTech", description: "Worked on real-time web development projects.", icon: <FaLaptopCode className="text-red-500 w-6 h-6" /> },
+    { title: "Security Analyst", description: "Led vulnerability assessments and penetration testing tasks.", icon: <FaUserShield className="text-purple-500 w-6 h-6" /> },
+    { title: "Bug Bounty Hunter", description: "Discovered critical vulnerabilities in Fortune 500 companies.", icon: <FaBug className="text-teal-500 w-6 h-6" /> },
+    { title: "Freelance Pen Tester", description: "Conducted independent security audits for startups.", icon: <FaBug className="text-pink-500 w-6 h-6" /> },
   ];
 
-  // Handle page load animation
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoaded(true);
-    }, 500); // Delay for the loading animation (500ms)
+    }, 500);
     return () => clearTimeout(timer);
   }, []);
 
-  // Render timeline items with scroll animations
   const renderTimelineItem = (item, index) => (
     <motion.div
       key={index}
-      className="relative mb-10"
-      initial={{ opacity: 0, y: 100 }}  // Initial state (invisible and below)
-      whileInView={{ opacity: 1, y: 0 }} // Animate when the item is in the viewport
-      viewport={{ once: true }}  // Animation triggers only once when the element comes into view
-      transition={{ duration: 0.5, delay: index * 0.2 }} // Delay based on index for staggered animation
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, delay: index * 0.2 }}
+      className="bg-gradient-to-br from-zinc-800 to-black rounded-xl border border-gray-600 shadow-2xl p-6 mb-8 w-full hover:scale-[1.02] transition-transform duration-300"
     >
-      {/* Progress Dot (colored) */}
-      <div className={`absolute w-6 h-6 ${item.dotColor} rounded-full -left-6 sm:-left-8`}></div>
-
-      {/* Card Content */}
-      <div className="ml-12 sm:ml-16 bg-black border border-gray-400 rounded-lg shadow-lg p-6">
-        <h3 className="text-xl font-semibold text-center text-white mt-4">{item.title}</h3>
-        <p className="mt-2 text-center text-gray-400">{item.description}</p>
+      <div className="flex flex-col items-center">
+        <div className="mb-3 animate-pulse">{item.icon}</div>
+        <h3 className="text-2xl font-extrabold italic text-orange-400 mb-2 text-center">{item.title}</h3>
+        <p className="text-sm text-gray-300 italic text-center">{item.description}</p>
       </div>
     </motion.div>
   );
 
   return (
     <motion.div
-      className="mt-4 bg-black text-white"
+      className="bg-black text-white px-4 sm:px-8 py-12"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      {/* Education Section */}
-      <section className="py-12 px-4 sm:px-8">
-        <h2 className="text-3xl font-bold text-center mb-6">Education</h2>
-        <div className="relative before:absolute before:content-[''] before:w-1 before:h-full before:bg-gray-400 before:left-4 sm:before:left-6">
+      <section className="mb-16">
+        <h2 className="text-4xl font-bold text-center text-orange-500 mb-10 italic">
+          <span className="font-serif text-5xl">E</span>ducation
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {educationData.map(renderTimelineItem)}
         </div>
       </section>
 
-      {/* Work Experience Section */}
-      <section className="py-12 px-4 sm:px-8">
-        <h2 className="text-3xl font-bold text-center mb-6">Work Experience</h2>
-        <div className="relative before:absolute before:content-[''] before:w-1 before:h-full before:bg-gray-400 before:left-4 sm:before:left-6">
+      <section>
+        <h2 className="text-4xl font-bold text-center text-orange-500 mb-10 italic">
+          <span className="font-serif text-5xl">W</span>ork Experience
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {workData.map(renderTimelineItem)}
         </div>
       </section>
 
-      {/* Loader Animation (until page content is visible) */}
       {!isLoaded && (
         <div className="fixed top-0 left-0 right-0 bottom-0 bg-black opacity-75 flex justify-center items-center z-50">
           <motion.div
             className="w-12 h-12 bg-red-500 rounded-full"
             animate={{ rotate: 360 }}
-            transition={{
-              repeat: Infinity,
-              duration: 1,
-              ease: "linear",
-            }}
+            transition={{ repeat: Infinity, duration: 1, ease: "linear" }}
           />
         </div>
       )}
